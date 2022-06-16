@@ -5,11 +5,11 @@
 
 <main>
   <img src={logo} alt="Svelte Logo" />
-  <h1>Hello world!</h1>
+  <h1>Test</h1>
   <i class="fas fa-home fa-5x"></i>
 
 
-  <Counter />
+  <!-- <Counter />
 
   <p>
     Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
@@ -19,7 +19,7 @@
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
     the officially supported framework, also powered by Vite!
-  </p>
+  </p> -->
 </main>
 
 <style>
