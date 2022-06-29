@@ -1,18 +1,18 @@
-<!-- <script></script> -->
-<!-- JAVASCRIPT LOGIC -->
+<script>
+  import Navbar from "./components/Navbar.svelte"
+  import Title from "./components/Title.svelte"
+  import Example from "./components/Example.svelte"
+</script>
 
-<!-- <style></style> -->
-<!-- CSS/STYLING -->
+<style>
 
-<!-- HTML -->
-<nav class="nav">
-  <div class="nav-center">
-  <h1 class="'nav-title">Budget Calculator</h1>
-    <button type="button" class="nav-btn">
-      <i class="far fa-plus-square" />
-      Add Item
-    </button>
-  </div>
+</style>
 
+<Navbar />
 
-</nav>
+<Title title="add expense" />
+<Title title="expense list" />
+<Title />
+
+<Example />
+<span>Hello from App</span>
