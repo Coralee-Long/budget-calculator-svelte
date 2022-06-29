@@ -1,18 +1,24 @@
 <script>
   import Navbar from "./components/Navbar.svelte"
   import Title from "./components/Title.svelte"
-  import Example from "./components/Example.svelte"
+
+  let fruits = ['apple', 'orange', 'lemon']
+
 </script>
 
-<style>
-
-</style>
-
+<main>
 <Navbar />
 
-<Title title="add expense" />
-<Title title="expense list" />
-<Title />
+<!-- DYNAMIC PROPS -->
 
-<Example />
-<span>Hello from App</span>
+<!-- <Title title="add expense" />
+<Title title="expense list" /> -->
+
+{#each fruits as fruitItem} 
+
+<Title title={fruitItem}/>
+<!-- <h1>Fruit: {fruitItem}</h1> -->
+
+{/each}
+
+</main>
