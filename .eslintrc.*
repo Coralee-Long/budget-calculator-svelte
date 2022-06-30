@@ -1,0 +1,12 @@
+{
+  {
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+  "extends": [
+    "some-other-config-you-use",
+    "prettier"
+  ]
+}

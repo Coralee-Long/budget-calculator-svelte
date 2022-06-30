@@ -1,24 +1,17 @@
 <script>
-  import Navbar from "./components/Navbar.svelte"
-  import Title from "./components/Title.svelte"
-
-  let fruits = ['apple', 'orange', 'lemon']
-
+  // components
+  import Navbar from './components/Navbar.svelte'
+  import ExpensesList from './components/ExpensesList.svelte'
+  // data
+  import expensesData from './expenses.js'
+  //variables
+  let expenses = [...expensesData]
+  console.log(expenses)
 </script>
 
-<main>
 <Navbar />
-
-<!-- DYNAMIC PROPS -->
-
-<!-- <Title title="add expense" />
-<Title title="expense list" /> -->
-
-{#each fruits as fruitItem} 
-
-<Title title={fruitItem}/>
-<!-- <h1>Fruit: {fruitItem}</h1> -->
-
-{/each}
-
+<main class="content">
+  <!-- If prop and value names are the same, it often will auto-format from: 
+    expenses="{expenses}" >>> TO >>> {expenses} -->
+  <ExpensesList expenses="{expenses}" />
 </main>

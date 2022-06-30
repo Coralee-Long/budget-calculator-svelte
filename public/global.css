@@ -48,11 +48,13 @@ h4,
 h5,
 h6 {
   font-family: "Catamaran", sans-serif;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1rem; */
+  padding: 1rem;
   letter-spacing: var(--mainSpacing);
 }
 p {
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1rem; */
+  padding: 1rem;
 }
 ul {
   list-style-type: none;
